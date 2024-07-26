@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Popins-Regular';
+  src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Popins-Regular', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.animate-text .typed-name, .animate-text .typed-career2{
+    position: relative;
+}
+
+.animate-text .typed-name:after {
+    content: '';
+    padding: 0;
+    position: absolute;
+    left: -2px;
+    right: 0;
+    height: 100%;
+    border-left: 2px solid #feb633;
+    background-color: #2c2c2c;
+    animation: 5s textType;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(10);
+    animation-fill-mode: backwards;
+}
+
+.animate-text .typed-career2:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    right: 0;
+    height: 90%;
+    border-left: 2px solid #feb633;
+    background-color: #2c2c2c;
+    animation: 7s textType;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(10);
+    animation-fill-mode: backwards;
+}
+
+@keyframes textType {
+    0%{
+       left: 0;
+    }
+    50%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+
+
