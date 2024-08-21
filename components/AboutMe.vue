@@ -1,5 +1,14 @@
 <script setup lang="ts">
 
+import css from 'assets/images/css.png'
+import html from 'assets/images/html.png'
+import js from 'assets/images/js.png'
+import react from 'assets/images/reactjs.png'
+import vue from 'assets/images/vue.webp'
+import ionic from 'assets/images/icon-ionic.svg'
+import node from 'assets/images/nodejs.png'
+
+
 const isCOpyLink = ref(false)
 const seeCv = () => {
   window.open('https://drive.google.com/file/d/1bPZ8PKNWPkQ4Nd6NhBO0SEmfottmXvtO/view?usp=sharing', '_blank')
@@ -17,15 +26,15 @@ const copyLink = () => {
 </script>
 
 <template>
-  <section class="w-full flex bg-[#303131] px-5 py-20 justify-center items-center">
-    <article class="w-full m-auto lg:w-[90%] lg:flex lg:flex-1">
+  <section class="section_container bg-[#303131]">
+    <article class="section_content lg:flex">
 
-      <div class="w-full flex justify-center mb-20">
+      <div class="w-full flex justify-center mb-14">
         <div
             class="relative w-[140px] h-[140px] lg:w-[240px] lg:h-[240px] rounded-full bg-[#4e3a23] flex justify-center items-center">
           <div
               class="w-[100px] h-[100px] lg:w-[150px] lg:h-[150px] rounded-full bg-[#303131] flex justify-center items-center">
-            <h1 class="absolute text-3xl lg:text-5xl text-[#cccccc] font-black border-b-4 border-[#f9a826]">Sobre
+            <h1 class="absolute section_title border-b-4 border-[#f9a826]">Sobre
               mi</h1>
           </div>
         </div>
@@ -43,6 +52,7 @@ const copyLink = () => {
           web.
         </p>
         <br>
+        <p class="hidden lg:block text-white p-1">Link de CV:</p>
         <div class="flex lg:gap-4 text-white">
           <button @click="seeCv"
                   target="_blank"
@@ -55,6 +65,89 @@ const copyLink = () => {
         </div>
       </div>
     </article>
+
+    <article class="section_content pt-20 text-center relative">
+      <span class="section_title">Habilidades</span>
+
+      <div class="flex text-white flex-wrap justify-center gap-x-10 gap-y-16 mt-2 pb-24">
+
+        <div class="skill_card">
+          <img class="block m-auto h-[200px]" :src="html" alt="logo html">
+          <div class="skill_level"></div>
+          <h2 class="text-3xl font-light mt-7 mx-auto mb-5">HTML</h2>
+          <p>
+            lore ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod nisl in arcu.
+          </p>
+        </div>
+
+        <div class="skill_card">
+          <img class="block m-auto h-[200px]" :src="css" alt="logo css">
+          <div class="skill_level"></div>
+          <h2 class="text-3xl font-light mt-7 mx-auto mb-5">CSS</h2>
+          <p>
+            lore ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod nisl in arcu.
+          </p>
+        </div>
+
+
+        <div class="skill_card">
+
+          <img class="block m-auto h-[200px]" :src="js" alt="logo js">
+          <div class="skill_level"></div>
+          <h2 class="text-3xl font-light mt-7 mx-auto mb-5">JS</h2>
+          <p>
+            lore ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod nisl in arcu.
+          </p>
+        </div>
+
+
+        <div class="skill_card">
+
+          <img class="block m-auto h-[200px]" :src="react" alt="logo react">
+          <div class="skill_level"></div>
+          <h2 class="text-3xl font-light mt-7 mx-auto mb-5">REACT</h2>
+          <p>
+            lore ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod nisl in arcu.
+          </p>
+        </div>
+
+
+        <div class="skill_card">
+
+          <img class="block m-auto h-[200px]" :src="vue" alt="logo vue">
+          <div class="skill_level"></div>
+          <h2 class="text-3xl font-light mt-7 mx-auto mb-5">VUE</h2>
+          <p>
+            lore ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod nisl in arcu.
+          </p>
+        </div>
+
+
+        <div class="skill_card">
+
+          <img class="block m-auto h-[200px]" :src="ionic" alt="logo ionic">
+          <div class="skill_level"></div>
+          <h2 class="text-3xl font-light mt-7 mx-auto mb-5">IONIC</h2>
+          <p>
+            lore ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod nisl in arcu.
+          </p>
+        </div>
+
+
+        <div class="skill_card">
+
+          <img class="block m-auto h-[200px]" :src="node" alt="logo node">
+          <div class="skill_level"></div>
+          <h2 class="text-3xl font-light mt-7 mx-auto mb-5">NODE</h2>
+          <p>
+            lore ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod nisl in arcu.
+          </p>
+        </div>
+
+      </div>
+
+    </article>
+
   </section>
 </template>
 
@@ -64,6 +157,67 @@ button:hover {
   color: #f9a826;
   border: 2px solid #f9a826;
   background: #303131;
+}
+
+.skill_card{
+  width: 300px;
+  position: relative;
+}
+
+.skill_level{
+    position: absolute;
+    top: 18%;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 50%;
+    border: 10px solid black;
+}
+
+.skill_card:nth-child(1) .skill_level{
+    background: #ff4f4f28;
+    border-color: #ff4f4f;
+    color: #ff4f4f;
+}
+
+.skill_card:nth-child(2) .skill_level {
+    background: #4fa0ff28;
+    border-color: #4fa0ff;
+    color: #4fa0ff;
+}
+
+.skill_card:nth-child(3) .skill_level {
+    background: #ffed4f28;
+    border-color: #ffed4f;
+    color: #ffed4f;
+}
+
+.skill_card:nth-child(4) .skill_level {
+    background: #4fdfff28;
+    border-color: #4fdfff;
+    color: #4fdfff;
+}
+
+.skill_card:nth-child(5) .skill_level {
+    background: #49d19128;
+    border-color: #49d191;
+    color: #49d191;
+}
+
+.skill_card:nth-child(6) .skill_level {
+    background: #498afe28;
+    border-color: #498afe;
+    color: #498afe;
+}
+
+.skill_card:nth-child(7) .skill_level {
+    background: #49d19128;
+    border-color: #11814c;
+    color: #0c7144;
 }
 
 </style>

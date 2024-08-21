@@ -4,7 +4,7 @@
 
 <template>
   <div class="w-full h-screen bg-[#2b2c2c]">
-    <h1>Experience Page</h1>
+    <h1 class="section_title">Contact part</h1>
   </div>
 </template>
 

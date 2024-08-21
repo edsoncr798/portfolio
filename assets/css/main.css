@@ -10,6 +10,71 @@
     box-sizing: border-box;
 }
 
+
+.subline_text::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(70% - 50%);
+  width: 60%;
+  height: 10%;
+  background: #feb633;
+  z-index: -1;
+  transform: scaleX(0%);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.subline_text::before {
+  transform: scaleX(100%);
+}
+
+/*.subline_text:hover {*/
+/*  color: #feb633;*/
+/*  cursor: pointer;*/
+/*  transition: all 0.5s;*/
+/*}*/
+
+.subline_text{
+  color: #feb633;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+
+.section_title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #cccccc;
+    border-bottom-width: 4px;
+    border-bottom-color: #f9a826;
+}
+
+.section_container{
+    width: 100%;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.section_content {
+    width: 100%;
+    margin: auto;
+}
+
+
+@media screen and (min-width: 1024px){
+    .section_title{
+        font-size: 2.5rem;
+    }
+    .section_content{
+        width: 90%;
+    }
+}
+
+
+
+
 .animate-text .typed-name, .animate-text .typed-career2{
     position: relative;
 }

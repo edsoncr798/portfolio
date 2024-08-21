@@ -7,7 +7,7 @@ import mePhoto from '~/assets/images/me.png'
 <template>
   <section class="flex not-show px-5 w-full min-h-screen bg-[#2b2c2c] border-b lg:border-none ">
 
-    <article class="grid grid-cols-1 md:grid-cols-2 bg-[#2b2c2c] text-white w-full lg:w-[90%] m-auto ">
+    <article class="grid grid-cols-1 md:grid-cols-2 bg-[#2b2c2c] text-white w-full md:w-[80%] m-auto ">
 
       <div class="flex flex-col gap-8 text-center">
         <div class="animate-text text-start">
