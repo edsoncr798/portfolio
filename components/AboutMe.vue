@@ -66,16 +66,16 @@ const copyLink = () => {
       </div>
     </article>
 
-    <article class="section_content pt-20 text-center relative">
+    <article class="section_content pt-28 text-center relative">
       <span class="section_title">Habilidades</span>
 
-      <div class="flex text-white flex-wrap justify-center gap-x-10 gap-y-16 mt-2 pb-24">
+      <div class="flex text-white flex-wrap justify-between gap-x-10 gap-y-16 mt-14 pb-24">
 
         <div class="skill_card">
           <img class="block m-auto h-[200px]" :src="html" alt="logo html">
           <div class="skill_level"></div>
           <h2 class="text-3xl font-light mt-7 mx-auto mb-5">HTML</h2>
-          <p>
+          <p class="text-[#999999]">
             lore ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod nisl in arcu.
           </p>
         </div>
@@ -84,7 +84,7 @@ const copyLink = () => {
           <img class="block m-auto h-[200px]" :src="css" alt="logo css">
           <div class="skill_level"></div>
           <h2 class="text-3xl font-light mt-7 mx-auto mb-5">CSS</h2>
-          <p>
+          <p class="text-[#999999]">
             lore ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod nisl in arcu.
           </p>
         </div>
@@ -95,7 +95,7 @@ const copyLink = () => {
           <img class="block m-auto h-[200px]" :src="js" alt="logo js">
           <div class="skill_level"></div>
           <h2 class="text-3xl font-light mt-7 mx-auto mb-5">JS</h2>
-          <p>
+          <p class="text-[#999999]">
             lore ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod nisl in arcu.
           </p>
         </div>
@@ -106,7 +106,7 @@ const copyLink = () => {
           <img class="block m-auto h-[200px]" :src="react" alt="logo react">
           <div class="skill_level"></div>
           <h2 class="text-3xl font-light mt-7 mx-auto mb-5">REACT</h2>
-          <p>
+          <p class="text-[#999999]">
             lore ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod nisl in arcu.
           </p>
         </div>
@@ -117,7 +117,7 @@ const copyLink = () => {
           <img class="block m-auto h-[200px]" :src="vue" alt="logo vue">
           <div class="skill_level"></div>
           <h2 class="text-3xl font-light mt-7 mx-auto mb-5">VUE</h2>
-          <p>
+          <p class="text-[#999999]">
             lore ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod nisl in arcu.
           </p>
         </div>
@@ -128,18 +128,7 @@ const copyLink = () => {
           <img class="block m-auto h-[200px]" :src="ionic" alt="logo ionic">
           <div class="skill_level"></div>
           <h2 class="text-3xl font-light mt-7 mx-auto mb-5">IONIC</h2>
-          <p>
-            lore ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod nisl in arcu.
-          </p>
-        </div>
-
-
-        <div class="skill_card">
-
-          <img class="block m-auto h-[200px]" :src="node" alt="logo node">
-          <div class="skill_level"></div>
-          <h2 class="text-3xl font-light mt-7 mx-auto mb-5">NODE</h2>
-          <p>
+          <p class="text-[#999999]">
             lore ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod nisl in arcu.
           </p>
         </div>

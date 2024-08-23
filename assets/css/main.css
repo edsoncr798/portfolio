@@ -43,9 +43,9 @@
 
 
 .section_title{
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size:30px;
+    font-weight: 700;
+    text-transform: capitalize;
     color: #cccccc;
     border-bottom-width: 4px;
     border-bottom-color: #f9a826;
@@ -65,7 +65,7 @@
 
 @media screen and (min-width: 1024px){
     .section_title{
-        font-size: 2.5rem;
+        font-size: 45px;
     }
     .section_content{
         width: 90%;
