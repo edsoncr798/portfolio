@@ -1,12 +1,11 @@
 <script setup lang="ts">
 
-import css from 'assets/images/css.png'
-import html from 'assets/images/html.png'
-import js from 'assets/images/js.png'
-import react from 'assets/images/reactjs.png'
-import vue from 'assets/images/vue.webp'
-import ionic from 'assets/images/icon-ionic.svg'
-import node from 'assets/images/nodejs.png'
+import css from '~/static/images/png/css.png'
+import html from '~/static/images/png/html.png'
+import js from '~/static/images/png/js.png'
+import react from '~/static/images/png/reactjs.png'
+import vue from '~/static/images/vue.webp'
+import ionic from '~/static/images/icon-ionic.svg'
 
 
 const isCOpyLink = ref(false)

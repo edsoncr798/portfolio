@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import mePhoto from '~/assets/images/me.png'
+import mePhoto from '~/static/images/png/me.png'
 
 
 </script>
@@ -17,7 +17,7 @@ import mePhoto from '~/assets/images/me.png'
           <p class="text-2xl">Desarrollador <span class="typed-career">Front End web <br> & mobil</span></p>
           <span class="text-2xl  typed-career2 color_text">Vue JS</span>
         </div>
-        <button class="text-xl p-4 w-[230px] rounded bg-[#f9a826]">Contratame</button>
+        <button class="text-xl p-4 w-[230px] rounded bg-[#f9a826]">contrátame </button>
       </div>
 
       <div class="w-full pt-[60px] md:pt-0 flex justify-center lg:justify-end">
