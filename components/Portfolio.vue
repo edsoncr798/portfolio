@@ -1,13 +1,15 @@
 <script setup lang="ts">
+import {Swiper, SwiperSlide} from "swiper/vue";
+import "swiper/swiper-bundle.css";
 
 import bipbip from '~/static/images/jpg/bipbip.jpg'
 import sici from '~/static/images/jpg/sici.jpg'
 import pokedex from '~/static/images/jpg/pokedex.jpg'
 
 const images = [
-  { src: bipbip, alt: 'Project 1' },
-  { src: sici, alt: 'Project 2' },
-  { src: pokedex, alt: 'Project 3' }
+  {src: bipbip, alt: 'Project 1'},
+  {src: sici, alt: 'Project 2'},
+  {src: pokedex, alt: 'Project 3'}
 ];
 
 const currentIndex = ref(0);
@@ -18,7 +20,7 @@ const next = () => {
 
 const prev = () => {
   currentIndex.value =
-    (currentIndex.value - 1 + images.length) % images.length;
+      (currentIndex.value - 1 + images.length) % images.length;
 };
 
 </script>
@@ -56,66 +58,21 @@ const prev = () => {
 
       <!--      </div>-->
 
-      <div class="carousel">
-        <div class="carousel-inner">
-          <div
-              v-for="(image, index) in images"
-              :key="index"
-              class="carousel-item"
-              :class="{ active: index == currentIndex }"
-          >
-            <img :src="image.src" :alt="image.alt"/>
-          </div>
-        </div>
-        <button @click="prev" class="carousel-control prev">‹</button>
-        <button @click="next" class="carousel-control next">›</button>
-      </div>
+      <swiper :slides-per-view="1" navigation pagination>
+        <swiper-slide v-for="(image, index) in images" :key="index">
+          <img :src="image.src" :alt="image.alt"/>
+        </swiper-slide>
+      </swiper>
+
     </article>
   </section>
 </template>
 
 <style scoped>
-.carousel {
-  position: relative;
+img {
   width: 100%;
-  max-width: 600px;
-  overflow: hidden;
-  margin: auto;
-}
-
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-  min-width: 100%;
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0;
-}
-
-.carousel-item.active {
-  opacity: 1;
-}
-
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.carousel-control.prev {
-  left: 10px;
-}
-
-.carousel-control.next {
-  right: 10px;
+  height: auto;
+  display: block;
 }
 
 </style>
