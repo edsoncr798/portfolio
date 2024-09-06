@@ -22,17 +22,6 @@ const images = [
   {src: bipbip, alt: 'Project 3'}
 ];
 
-const currentIndex = ref(0);
-
-const next = () => {
-  currentIndex.value = (currentIndex.value + 1) % images.length;
-};
-
-const prev = () => {
-  currentIndex.value =
-      (currentIndex.value - 1 + images.length) % images.length;
-};
-
 </script>
 
 <template>
