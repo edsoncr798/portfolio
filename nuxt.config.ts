@@ -2,25 +2,28 @@
 import path from "path";
 
 export default defineNuxtConfig({
-    alias: {
-        '@': path.resolve(__dirname),
-        '~': path.resolve(__dirname)
-    },
+  alias: {
+      '@': path.resolve(__dirname),
+      '~': path.resolve(__dirname)
+  },
 
-    plugins: [
-        '~/plugins/swiper.js'
-    ],
+  plugins: [
+      '~/plugins/swiper.js'
+  ],
 
-    $development: undefined,
-    devtools: {enabled: true},
+  $development: undefined,
+  devtools: {enabled: true},
 
-    typescript: {
-        shim: false
-    },
+  typescript: {
+      shim: false
+  },
 
-    modules: ["@nuxtjs/tailwindcss"],
-    css: [
-        '@fortawesome/fontawesome-svg-core/styles.css',
-        '@/assets/css/main.css'
-    ]
+  modules: ["@nuxtjs/tailwindcss"],
+
+  css: [
+      '@fortawesome/fontawesome-svg-core/styles.css',
+      '@/assets/css/main.css'
+  ],
+
+  compatibilityDate: '2024-09-17'
 })
