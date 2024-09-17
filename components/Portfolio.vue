@@ -1,16 +1,11 @@
 <script setup lang="ts">
-import {Swiper, SwiperSlide} from "swiper/vue";
-
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-
 import bipbip from '~/static/images/jpg/bipbip.jpg';
 import sici from '~/static/images/jpg/sici.jpg';
 import pokedex from '~/static/images/jpg/pokedex.jpg';
-import {Autoplay, Navigation, Pagination} from "swiper/modules";
+import {Navigation, Pagination} from "swiper/modules";
 
-const modules = [Autoplay, Pagination, Navigation]
+const modules = [Pagination, Navigation ]
+
 
 const images = [
   {src: bipbip, alt: 'Project 1'},
@@ -21,6 +16,7 @@ const images = [
   {src: pokedex, alt: 'Project 3'},
   {src: bipbip, alt: 'Project 3'}
 ];
+
 
 </script>
 
@@ -38,25 +34,31 @@ const images = [
         En esta sección, te presento algunos de los proyectos que más me marcaron, tanto en mi etapa de formación como
         en mi carrera profesional. Estos proyectos reflejan mi capacidad para resolver problemas, aprender rápidamente
         nuevas herramientas, y contribuir efectivamente al éxito de un equipo.</p>
-
-      <swiper
-          ref="{swiperRef}"
-          :slidesPerView="3"
-          :spaceBetween="10"
-          :pagination="true"
-          :modules="modules"
-          :autoplay="{delay: 3000}"
-          class="mySwiper">
-        <swiper-slide class="rounded-lg h-[200px] md:h-[500px]" v-for="(image, index) in images" :key="index">
-          <img class="rounded-lg" :src="image.src" :alt="image.alt"/>
-        </swiper-slide>
-      </swiper>
-
     </article>
+    <swiper
+        :slidesPerView="3"
+        :spaceBetween="10"
+        :pagination="{
+    type: 'bullets',
+    }"
+        :modules="modules"
+        class="mySwiper"
+    >
+      <swiper-slide v-for="(image, i) in images" :key="i">
+        <img :src="image.src" :alt="image.alt">
+      </swiper-slide>
+    </swiper>
+
+
   </section>
 </template>
 
 <style scoped>
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
 .swiper-slide {
   text-align: center;
@@ -73,10 +75,13 @@ const images = [
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: fill;
-  cursor: pointer;
+  object-fit: cover;
 }
 
-
+.swiper {
+  width: 100%;
+  height: 200px;
+  margin: 20px auto;
+}
 
 </style>

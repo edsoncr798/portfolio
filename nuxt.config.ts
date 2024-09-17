@@ -7,6 +7,10 @@ export default defineNuxtConfig({
         '~': path.resolve(__dirname)
     },
 
+    plugins: [
+        '~/plugins/swiper.js'
+    ],
+
     $development: undefined,
     devtools: {enabled: true},
 
