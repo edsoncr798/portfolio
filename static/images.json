@@ -1,0 +1,35 @@
+[
+  {
+    "name": "bipbip",
+    "images": [
+      "/images/jpg/bipbip1.jpg",
+      "/images/jpg/bipbip2.jpg",
+      "/images/jpg/bipbip3.jpg",
+      "/images/jpg/bipbip4.jpg",
+      "/images/jpg/bipbip5.jpg",
+      "/images/jpg/bipbip6.jpg",
+      "/images/jpg/bipbip7.jpg"
+    ],
+    "video": "/videos/bipbipplay.mp4"
+  },
+  {
+    "name": "sici",
+    "images": [
+      "/images/jpg/sici1.jpg",
+      "/images/jpg/sici2.jpg",
+      "/images/jpg/sici3.jpg",
+      "/images/jpg/sici4.jpg",
+      "/images/jpg/sici5.jpg",
+      "/images/jpg/sici6.jpg",
+      "/images/jpg/sici7.jpg"
+    ],
+    "video": "/videos/siciplay.mp4"
+  },
+  {
+    "name": "pokedex",
+    "images": [
+      "/images/jpg/pokedex.jpg"
+    ],
+    "video": "https://www.uptech.team/sb_static/dsc.mp4"
+  }
+]
