@@ -4,15 +4,22 @@ const modules = [Pagination, Navigation]
 import bipbip1 from "~/static/images/jpg/bipbip1.jpg";
 import sici1 from "~/static/images/jpg/sici.jpg";
 import pokedex from "~/static/images/jpg/pokedex.jpg";
+import ModalDescription from "~/components/shared/ModalDescription.vue";
+import {mediaData} from "~/data/mediaData";
 
-const images = ref([
-  {src: bipbip1, alt: 'Project 1'},
-  {src: sici1, alt: 'Project 2'},
-  {src: pokedex, alt: 'Project 3'},
-  {src: bipbip1, alt: 'Project 3'},
-  {src: sici1, alt: 'Project 3'},
-  {src: pokedex, alt: 'Project 3'}
-]);
+const data = mediaData;
+
+const openModal = ref(false);
+const selectedImageId = ref(null);
+
+const openModalDescription = (id) => {
+  selectedImageId.value = id;
+  openModal.value = true;
+};
+
+const closeModal = () => {
+  openModal.value = false;
+};
 
 </script>
 
@@ -26,12 +33,16 @@ const images = ref([
     }"
         :modules="modules"
     >
-      <swiper-slide v-for="(image, i) in images" :key="i">
-        <img :src="image.src" :alt="image.alt">
+      <swiper-slide v-for="image in data" :key="image.id">
+        <img
+            :src="image.images[0].src"
+            :alt="image.alt"
+            @click="openModalDescription(image.id)"
+        >
       </swiper-slide>
     </swiper>
+    <modal-description v-if="openModal" :selectedImageId="selectedImageId"  @closeModal="closeModal"/>
   </div>
-
 </template>
 <style scoped>
 
@@ -58,18 +69,9 @@ const images = ref([
 
 .swiper {
   width: 100%;
-  height: 200px;
+  height: 100%;
 }
 
-@media (min-width: 768px) {
-  .swiper {
-    height: 50%;
-  }
 
-  .swiper-slide img {
-    height: 100%;
-    border-radius: 10px;
-  }
-}
 
 </style>

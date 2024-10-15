@@ -84,7 +84,7 @@ const addZIndex = (event: Event) => {
               Desde el 15 agosto de 2023
             </strong>
             <h2 class="text-2xl font-bold ">Frontend Developer Junior en Vue.js</h2>
-            <span class="font-bold">Academlo</span>
+            <span class="font-bold">Efydev</span>
             <p class="text-start pt-2">
               Equipo: Colaboración en un equipo de desarrollo web & mobile. <br>
               Proyectos: Participación en dos proyectos clave. <br>

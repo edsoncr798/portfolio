@@ -18,8 +18,9 @@
         en mi carrera profesional. Estos proyectos reflejan mi capacidad para resolver problemas, aprender rápidamente
         nuevas herramientas, y contribuir efectivamente al éxito de un equipo.</p>
     </article>
-    <slide-img-mobile class="block lg:hidden" />
-    <slide-img-desktop class="hidden lg:block" />
+
+    <slide-img-mobile class="block lg:hidden"/>
+    <slide-img-desktop class="hidden lg:block"/>
 
   </section>
 </template>

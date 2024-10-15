@@ -147,65 +147,65 @@ button:hover {
   background: #303131;
 }
 
-.skill_card{
+.skill_card {
   width: 300px;
   position: relative;
 }
 
-.skill_level{
-    position: absolute;
-    top: 18%;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    border-radius: 50%;
-    border: 10px solid black;
+.skill_level {
+  position: absolute;
+  top: 18%;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  border-radius: 50%;
+  border: 10px solid black;
 }
 
-.skill_card:nth-child(1) .skill_level{
-    background: #ff4f4f28;
-    border-color: #ff4f4f;
-    color: #ff4f4f;
+.skill_card:nth-child(1) .skill_level {
+  background: #ff4f4f28;
+  border-color: #ff4f4f;
+  color: #ff4f4f;
 }
 
 .skill_card:nth-child(2) .skill_level {
-    background: #4fa0ff28;
-    border-color: #4fa0ff;
-    color: #4fa0ff;
+  background: #4fa0ff28;
+  border-color: #4fa0ff;
+  color: #4fa0ff;
 }
 
 .skill_card:nth-child(3) .skill_level {
-    background: #ffed4f28;
-    border-color: #ffed4f;
-    color: #ffed4f;
+  background: #ffed4f28;
+  border-color: #ffed4f;
+  color: #ffed4f;
 }
 
 .skill_card:nth-child(4) .skill_level {
-    background: #4fdfff28;
-    border-color: #4fdfff;
-    color: #4fdfff;
+  background: #4fdfff28;
+  border-color: #4fdfff;
+  color: #4fdfff;
 }
 
 .skill_card:nth-child(5) .skill_level {
-    background: #49d19128;
-    border-color: #49d191;
-    color: #49d191;
+  background: #49d19128;
+  border-color: #49d191;
+  color: #49d191;
 }
 
 .skill_card:nth-child(6) .skill_level {
-    background: #498afe28;
-    border-color: #498afe;
-    color: #498afe;
+  background: #498afe28;
+  border-color: #498afe;
+  color: #498afe;
 }
 
 .skill_card:nth-child(7) .skill_level {
-    background: #49d19128;
-    border-color: #11814c;
-    color: #0c7144;
+  background: #49d19128;
+  border-color: #11814c;
+  color: #0c7144;
 }
 
 </style>
